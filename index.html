@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font style link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:wght@300&family=Lato:ital,wght@1,300&family=Manrope:wght@400;500;700;800&family=Open+Sans:wght@300;400&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link css style sheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font icon link -->
+    <script
+      src="https://kit.fontawesome.com/6a1c2b0a40.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App By Himanshu Kumar</title>
+  </head>
+
+  <body>
+    <!-- HTML Content start from here -->
+    <header class="header">
+      <h1 id="heading">Weather App</h1>
+    </header>
+    <main id="main-section">
+      <div class="weather-container">
+        <!-- Search box -->
+        <div class="searchBox">
+          <input type="text" id="search-box" placeholder="search your city" />
+          <button id="submit-btn">Submit</button>
+        </div>
+        <!-- temperature show  -->
+        <div id="weatherimage">
+          <img
+            src="assets/image/Light-Rain.jpg"
+            alt="image"
+            title="Light-Rain"
+            id="weather-img"
+          />
+        </div>
+        <div id="temp-show-box">
+          <span id="temp_value">0</span>
+        </div>
+        <div class="search-city-discription">
+          <span id="search-city" class="description">Light Rain</span>
+        </div>
+        <div class="temp-details">
+          <div class="Humidity">
+            <span id="humidity_value">57%</span>
+
+            <p>Humidity</p>
+          </div>
+
+          <div class="wind-speed">
+            <span id="windSpeed_value">59km/h</span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
